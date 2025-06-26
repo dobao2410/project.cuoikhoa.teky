@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Môi trường ảo (virtualenv)
+venv/
+ENV/
+env/
+*.env
+*.venv
+
+# Django
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+
+# Media (upload từ người dùng)
+media/
+
+# Staticfiles được collect (nếu bạn dùng collectstatic)
+staticfiles/
+static/
+
+# VSCode / IDE / hệ điều hành
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Git
+*.orig
+
+# Tệp cấu hình bảo mật hoặc môi trường
+.env
+.env.local
+.env.*.local
+
+# Migrations (tuỳ chọn, nếu không muốn commit)
+# Bạn có thể giữ migrations nếu làm việc nhóm
+# **/migrations/*.pyc
+# **/migrations/__pycache__/
+# !*/migrations/__init__.py

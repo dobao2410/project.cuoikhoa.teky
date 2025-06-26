@@ -1,0 +1,128 @@
+{% extends '../layout/_Layout.html' %}
+{% load static %}
+{% load humanize %}
+
+{% block content %}
+    <div class="container" style="padding-top: 30px; padding-bottom: 30px;">
+        <div class="row">
+            <div class="col-4">
+                <img src="{{product.img.url}}" alt="" style="width: 400px; height: 400px;">
+            </div>
+
+
+            <div class="col-8">
+                <div><p style="font-weight: 500; font-size: 30px;">{{product.name}}</p></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3" style="border-right-width: 10px; border-radius: 0%;">
+                            <p>SKU: 162056</p>
+                                <p>Chất liệu: Canvas</p>
+                                <p>Màu sắc: Trắng</p>
+                        </div>
+                        <div class="col-9">
+                            <span style="color: grey;">Drake Price:</span>
+                            <span style="font-size: 40px; color: red; font-weight: 700;">{{product.price|intcomma}}₫</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div>{{product.description}}</div>
+                <hr>
+                 
+                <select class="form-select" aria-label="Default select example" style="width: 20%;">
+                    <option selected>Chọn size</option>
+                    <option value="1">6US	 -   38EUR	-   24cm</option>
+                    <option value="1">6.5US	 -   38.5EUR	-   24.5cm</option>
+                    <option value="1">7US	 -   39EUR	-   25cm</option>
+                    <option value="1">7.5US	 -   40EUR	-   25.5cm</option>
+                    <option value="1">8.5US	 -   41EUR	-   26cm</option>
+                    <option value="1">9US	 -   42EUR	-   27cm</option>
+                    <option value="1">9.5US	 -   42.5EUR	-   27.5cm</option>
+                    <option value="1">10US	 -   43EUR	-   28cm</option>
+                    <option value="1">10.5US	 -   44EUR	-   28.5cm</option>
+                  </select>
+                <div style="padding-bottom: 30px;"><a href="#" style="color: yellow;"><i class="fa-solid fa-circle-info" style="color: yellow;"></i>Hướng dẫn chọn size</a></div>
+                <button style="border-radius: 200px; height: 40px; width: 150px; background-color: red; font-weight: 700; margin-right: 30px;">ĐẶT HÀNG</button>
+                <button style="border-radius: 200px; height: 40px; width: 200px; background-color: green; font-weight: 700;">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Bình luận:</h4>
+            <div style="display: flex; padding-bottom: 10px;">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+             <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <a class="btn btn-primary" href="#" role="button" style="width: 100px; margin-left: 92.35%;">Gửi</a>
+        <div>
+            <h3>Đánh giá từ người mua:</h3>
+            <h4>Tên user</h4>
+            <div style="display: flex; padding-bottom: 10px;">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>bình luận</p>
+            <br>
+            <h4>Tên user</h4>
+            <div style="display: flex; padding-bottom: 10px;">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>bình luận</p>
+            <br>
+            <h4>Tên user</h4>
+            <div style="display: flex; padding-bottom: 10px;">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>bình luận</p>
+            <br>
+            <h4>Tên user</h4>
+            <div style="display: flex; padding-bottom: 10px;">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>bình luận</p>
+            <br>
+            <h4>Tên user</h4>
+            <div style="display: flex; padding-bottom: 10px;">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>bình luận</p>
+            <br>
+            <h4>Tên user</h4>
+            <div style="display: flex; padding-bottom: 10px;">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>bình luận</p>
+            <br>
+        </div>
+    </div>
+{% endblock content %}

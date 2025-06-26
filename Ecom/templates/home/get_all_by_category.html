@@ -1,0 +1,19 @@
+{% extends '../layout/_Layout.html' %}
+{% load static %}
+{% block content %}
+<div class="container" style="padding-left: 90px; padding-top: 50px;">
+  <div class="row">
+    {% for item in products %}
+    <div class="card col-3" style="width: 18rem;">
+      <a href="{%url 'Detail' item.id%}"><img src="{{ item.img.url }}" class="card-img-top" alt="..."></a>
+      <div class="card-body">
+        <h5 class="card-title"><a class="name-product" href="{%url 'Detail' item.id%}">{{ item.name }}</a></h5>
+        <span style="font-size: 15px;">Drake price:</span>
+        <span class="card-text" style="color: red; font-size: 20px;">{{ item.price }}₫</span>
+      </div>    
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}
