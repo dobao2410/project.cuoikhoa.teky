@@ -69,3 +69,27 @@ a.name-product {
 a.name-product:hover{
     color:yellow
 }
+.box-shopping-cart {
+    position: relative;
+}
+div.number-shopping-cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    width: 20px;
+    font-size: 15px;
+}
+.number-shopping-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.box-shopping-cart {
+    position: relative;
+    width: 55px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
