@@ -17,14 +17,14 @@ env/
 *.pot
 *.pyc
 *.sqlite3
-db.sqlite3
+# db.sqlite3
 
 # Media (upload từ người dùng)
-media/
+# media/
 
 # Staticfiles được collect (nếu bạn dùng collectstatic)
-staticfiles/
-static/
+# staticfiles/
+# static/
 
 # VSCode / IDE / hệ điều hành
 .vscode/

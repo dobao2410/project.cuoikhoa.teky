@@ -1,0 +1,71 @@
+.header-top{
+    background-color: rgb(242,242,242);
+}
+.info-header-top{
+    list-style-type: none;
+}
+.info-header-top li{
+    display: inline-block;
+    margin: 0px;
+    border-right: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+.info-header-top li a {
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+    padding-top: 10px;
+    font-size: 20px;
+}
+ul.navbar-menu{
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+.navbar-menu .item-navbar-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 15px 21px;
+    font-weight: 700;
+}
+.header-bottom {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+.newsletter-footer{
+    height: 50px;
+    background-color: grey;
+    margin-bottom: 20px;
+}
+.gioi-thieu div a{
+    text-decoration: none;
+    color: black;
+}
+.thong-tin div a{
+    text-decoration: none;
+    color: black;
+}
+.ho-tro div a{
+    text-decoration: none;
+    color: black;
+}
+.anh .imgs img{
+    width: 35px;
+    height: 35px;
+}
+a.name-product {
+    text-decoration: none;
+    color: white;
+}
+a.name-product:hover{
+    color:yellow
+}
