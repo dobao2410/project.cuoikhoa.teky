@@ -3,15 +3,16 @@
 {% load humanize %}
 
 {% block content %}
+<input type="hidden" id="product-id" value="{{product.id}}"/>
     <div class="container" style="padding-top: 30px; padding-bottom: 30px;">
         <div class="row">
             <div class="col-4">
-                <img src="{{product.img.url}}" alt="" style="width: 400px; height: 400px;">
+                <img src="{{product.img.url}}" alt="" style="width: 400px; height: 400px;" id="product-img" data-product-img="{{product.img.url}}">
             </div>
 
 
             <div class="col-8">
-                <div><p style="font-weight: 500; font-size: 30px;">{{product.name}}</p></div>
+                <div><p style="font-weight: 500; font-size: 30px;" id="product-name" data-product-name="{{product.name}}" >{{product.name}}</p></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-3" style="border-right-width: 10px; border-radius: 0%;">
@@ -21,7 +22,7 @@
                         </div>
                         <div class="col-9">
                             <span style="color: grey;">Drake Price:</span>
-                            <span style="font-size: 40px; color: red; font-weight: 700;">{{product.price|intcomma}}₫</span>
+                            <span style="font-size: 40px; color: red; font-weight: 700;" id="product-price" data-product-price="{{product.price}}">{{product.price|intcomma}}₫</span>
 
                         </div>
                     </div>
